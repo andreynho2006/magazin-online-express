@@ -1,0 +1,25 @@
+<%- include("header") -%>
+    <table border="1" style="width: 100%; height:100%;">
+        <tr style="height: 10px;">
+            <td>
+                <%- include("menu") -%>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <% produse.forEach(function(produs) { %>
+                    <div>
+                        <a href="/product/<%=produs.id %> ">
+                            <%= produs.descriere %>
+                        </a>
+                    </div>
+                    <div>
+                        <%= produs.descriere %>
+                    </div>
+                    <div>
+                        <%= produs.pret %> RON
+                    </div>
+                    <% }); %>
+            </td>
+        </tr>
+        <%- include("footer") -%>

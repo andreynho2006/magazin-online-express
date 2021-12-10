@@ -1,0 +1,15 @@
+<%- include("header") -%>
+    <%- include("menu") -%>
+        <div>
+            <%= produs.nume %>
+        </div>
+        <div>
+            <%= produs.descriere %> RON
+        </div>
+        <div>
+            <%= produs.pret %> RON
+        </div>
+        <div>
+            <a href="/add-to-cart/<%= produs.id %>"></a>
+        </div>
+        <%- include("footer") %>
